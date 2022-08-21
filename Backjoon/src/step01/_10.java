@@ -15,7 +15,7 @@ public class _10 {
 		int[] putNum = new int[6];
 		
 		Scanner sc = new Scanner(System.in);
-//		System.out.println("입력");
+		System.out.println("입력");
 		int num = sc.nextInt();
 		
 		
