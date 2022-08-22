@@ -19,11 +19,13 @@ public class _12 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st;
 		
+		String str;
 		while (true) {
-			String str = br.readLine();
-			if(str == null || str.equals("") ) break;
-			StringTokenizer st = new StringTokenizer(str, " ");
+			str = br.readLine();
+			if(str == null) break;
+			st = new StringTokenizer(str, " ");
 			num1 = Integer.parseInt(st.nextToken());
 			num2 = Integer.parseInt(st.nextToken());
 			
