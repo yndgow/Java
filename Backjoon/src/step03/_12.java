@@ -21,16 +21,17 @@ public class _12 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		while (true) {
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			String str = br.readLine();
+			if(str == null || str.equals("") ) break;
+			StringTokenizer st = new StringTokenizer(str, " ");
 			num1 = Integer.parseInt(st.nextToken());
 			num2 = Integer.parseInt(st.nextToken());
 			
 			bw.write(num1 + num2 + "");
 			bw.newLine();
-			br.close();
-			bw.flush();
-			bw.close();
 		}
-		
+		br.close();
+		bw.flush();
+		bw.close();
 	}
 }

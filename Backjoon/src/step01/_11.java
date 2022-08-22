@@ -31,5 +31,7 @@ public class _11 {
 		 System.out.println(result2);
 		 System.out.println(result3);
 		 System.out.println(result4);
+		 
+		 sc.close();
 	}
 }
