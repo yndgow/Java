@@ -40,7 +40,7 @@ public class _01 {
 			
 			// 최소값
 			int min = array[0];
-			for(int k=1; k<=nCount; k++) {
+			for(int k=1; k<nCount; k++) {
 				if(min > array[k]) {
 					min = array[k];
 				}
@@ -51,7 +51,7 @@ public class _01 {
 
 			// 최대값
 			int max = array[0]; 
-			for(int j=1; j<=nCount; j++) {
+			for(int j=1; j<nCount; j++) {
 				if(max < array[j]) {
 					max = array[j];
 				}
