@@ -1,8 +1,14 @@
 package step04;
-
+/*
+ * 날짜 : 2022/08/29
+ * 이름 : 김지홍
+ * 내용 : 평균 1546
+ */
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class _04 {
@@ -22,18 +28,30 @@ public class _04 {
 		
 		// 최대값 구하기
 		int max = 0;
-		int score = Integer.parseInt(st.nextToken());
+		int score = 0;
 		while(st.hasMoreTokens()) {
+			score = Integer.parseInt(st.nextToken());
 			if(score > max) max = score; // 최대값 비교
 			
 		}
 
-		// 점수 올리기
-		int upscore;
+		// 올린 점수 총합구하기
+		double upscore;
+		double sum = 0;
+		
 		for(int i=0; i<count; i++) {
-			upscore = Integer.parseInt(arr[i]);
-			//upscore / max) * 100;
+			upscore = Double.parseDouble(arr[i]);
+			sum += (upscore / max) * 100;
 		}
+		// 평균 구하기
+		double avgUpScore = sum / count;
+		
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		bw.write(avgUpScore+"");
+		
+		br.close();
+		bw.flush();
+		bw.close();
 	}
 
 }
