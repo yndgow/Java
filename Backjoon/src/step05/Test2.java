@@ -7,27 +7,30 @@ package step05;
  */
 
 public class Test2 {
-
-	void selfNum() {
+	public static void main(String[] args) {
+		selfNum();
+	}
+	static void selfNum() {
 		boolean [] arr = new boolean [10001];
 		
-		
-		
-		int x = 0;;
-		int y = 0;
-		int sum = x;
-		
-		for(int i=0; i<arr.length; i++) {
-			while(i>0) {
-				x = i % 10; // 1 의 자리
+		for(int i=1; i<arr.length; i++) {
+			int x = i;
+			int y = 0;
+			int sum = 0;
+			sum += i;
+			
+			while(x>0) {
+				y = x % 10; // 1 의 자리
 
-				sum += x;
+				sum += y;
 				
-				i = x / 10;
+				x = x / 10;
 			}
+			if(sum<=10000) arr[sum] = true;
 		}
 		
-		
-		
+		for(int j=1; j<arr.length; j++) {
+			if(arr[j]==false) System.out.println(j);
+		}
 	}
 }
