@@ -8,8 +8,17 @@ public class VIPCustomer extends Customer{
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.01;
+		System.out.println("VIPCustomer() 생성자 호출");
 	}
 	
+	public VIPCustomer(int cutomerID, String customerName, int agentID) {
+		super(cutomerID, customerName);
+		customerGrade = "VIP";
+		bonusRatio = 0.05;
+		saleRatio = 0.01;
+		this.agentID = agentID;
+		System.out.println("VIPCustomer(int, String) 생성자 호출");
+	}
 	public int getAgentID() {
 		return agentID;
 	}
