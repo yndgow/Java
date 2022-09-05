@@ -17,10 +17,11 @@ public class Test3 {
 		int num = Integer.parseInt(br.readLine()); // 숫자입력
 		int result = 0; // 결과값 저장
 		
-
+		if(num>=100) result = 99;
 		// 입력된 숫자까지 반복문
 		for(int i=1; i<=num; i++) {
 			if(hansu(i)==true) {
+				
 				result++; // 한수라면 ++
 			}
 			
@@ -30,19 +31,16 @@ public class Test3 {
 	}
 	
 	static boolean hansu(int num) {
-		if(num<100) return true; // 100미만 true;
-		
-		ArrayList<Integer> arr = new ArrayList<Integer>();
-		
-		for (int j = 0; j<4; j++) {
-			arr.add(num % 10);
-			num /= 10;
-			if(num == 0) break;
+		if(num<100) {
+			return true; // 100미만 true;
+		}else if(num >=100) {
+			int num1 = 0;
+			int num2 = 0;
+			int num3 = 0;
+			
+			
 		}
-		if (arr.get(0) <= arr.get(1)) {
-			return true;
-		} else {
-			return false;
-		}
+		return false;
+		
 	}
 }
