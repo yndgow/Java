@@ -10,6 +10,8 @@ import java.util.Properties;
  * 날짜 : 2022/09/14
  * 이름 : 김지홍
  * 내용 : 프로퍼티 실습하기
+ * 
+ * 맵과 비슷 key = Stirng value = Stirng 형태
  */
 public class PropertiesTest {
 	public static void main(String[] args) {
