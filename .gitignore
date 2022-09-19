@@ -2,8 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,windows,eclipse
 
 ### user ###
-*.classpath
-*.project
+.classpath
+.project
 
 ### Eclipse ###
 .metadata

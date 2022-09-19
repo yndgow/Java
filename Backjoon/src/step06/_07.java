@@ -13,24 +13,25 @@ import java.io.InputStreamReader;
 public class _07 {
 
 	public static void main(String[] args) throws IOException {
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		String s = br.readLine();
-		String s = "734 893";
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String s = br.readLine();
 		String [] strArr = s.split(" "); // split 으로 잘라서 배열에 넣기
+		String [] chArr = null; // 앞뒤를 바꿀때 사용할 배열
+		String [] chArr2 = {"",""}; // 바꾼 숫자를 넣을 배열
 		
-		char a1 = strArr[0].charAt(0);
-		char a3 = strArr[0].charAt(2);
+		for(int i=0; i<strArr.length; i++) {
+			chArr = strArr[i].split("");
+			String c0 = chArr[0];
+			chArr[0] = chArr[2];
+			chArr[2] = c0;
+			chArr2[i] = chArr[0] + chArr[1] + chArr[2];
+		}
+		if(Integer.parseInt(chArr2[0])>Integer.parseInt(chArr2[1])) {
+			System.out.println(chArr2[0]);
+		}else {
+			System.out.println(chArr2[1]);
+		}
 		
-		strArr[0].replace(a1, a3);
-		strArr[0].replace(a3, a1);
-		System.out.println(strArr[0]);
-		System.out.println(a1);
-		System.out.println(a3);
-		 
-		
-		
-		
-		
-//		br.close();
+		br.close();
 	}
 }
