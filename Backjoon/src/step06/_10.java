@@ -20,7 +20,7 @@ public class _10 {
 //		String input = br.readLine();
 		
 		String input = "happyp";
-		
+		 
 		
 		int start = input.indexOf(input.charAt(0));
 		int end = input.lastIndexOf(input.charAt(0));
