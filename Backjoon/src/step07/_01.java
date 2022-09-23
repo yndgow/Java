@@ -22,7 +22,7 @@ public class _01 {
 		int vCost = Integer.parseInt(arr[1]);
 		int price = Integer.parseInt(arr[2]);
 
-		int cnt = 0;
+		int cnt = 0; 
 		
 		while(true) {
 			if(vCost >= price) {
