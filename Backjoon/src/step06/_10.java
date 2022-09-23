@@ -15,43 +15,33 @@ import java.util.List;
 public class _10 {
 
 	public static void main(String[] args) throws IOException {
-		
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		String input = br.readLine();
-		
-		String input = "happyp";
-		 
-		
-		int start = input.indexOf(input.charAt(0));
-		int end = input.lastIndexOf(input.charAt(0));
-		
-		for(int i=start; i<=end; i++) {
-			if(input.charAt(i) != 'p') {
-				System.out.println("X");
-			}else {
-				System.out.println("O");
-			}
-		}
-		
-		
-		
-		int [] arr = new int [26];
-		
-		for(int i=0; i<input.length(); i++) {
-			arr[input.charAt(i)-97]++;
-			
-		}
 
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i]>=2) {
-				for(int j=0; j<input.length(); j++) {
-					char [] charArr = input.toCharArray();
-					if(charArr[j] == (char)i+97) {
-						
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int count = Integer.parseInt(br.readLine());
+		int result = count;
+
+//		String input = "happyp";
+		
+		for (int k = 0; k < count; k++) {
+			String input = br.readLine();
+			for (int i = 0; i < input.length(); i++) {
+
+				int start = input.indexOf(input.charAt(i));
+				int end = input.lastIndexOf(input.charAt(i));
+
+				for (int j = start; j <= end; j++) {
+					if (input.charAt(j) != input.charAt(i)) {
+//						System.out.print("X");
+						result--;
+						break;
+					} else {
+//						System.out.print("O");
 					}
-					
 				}
+//				System.out.println();
 			}
 		}
+		System.out.println(result);
+
 	}
 }
