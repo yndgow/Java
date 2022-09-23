@@ -23,20 +23,28 @@ public class _10 {
 		
 //		System.out.println(input.indexOf(input.charAt(0)+""));
 //		System.out.println(input.lastIndexOf(input.charAt(0)));;
+
+		
+		int start = input.indexOf(input.charAt(0));
+		int end = input.lastIndexOf(input.charAt(0));
+		
+		for(int i=start; i<=end; i++) {
+			if(input.charAt(i) != 'p') {
+				System.out.println("X");
+			}else {
+				System.out.println("O");
+			}
+		}
 		
 		
 		
 		int [] arr = new int [26];
 		
-		
-		
 		for(int i=0; i<input.length(); i++) {
 			arr[input.charAt(i)-97]++;
 			
 		}
-		
-		System.out.println(25+"");
-		
+
 		for(int i=0; i<arr.length; i++) {
 			if(arr[i]>=2) {
 				for(int j=0; j<input.length(); j++) {
