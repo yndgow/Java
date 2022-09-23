@@ -21,9 +21,6 @@ public class _10 {
 		
 		String input = "happyp";
 		
-//		System.out.println(input.indexOf(input.charAt(0)+""));
-//		System.out.println(input.lastIndexOf(input.charAt(0)));;
-
 		
 		int start = input.indexOf(input.charAt(0));
 		int end = input.lastIndexOf(input.charAt(0));
