@@ -16,8 +16,9 @@ public class MemberHashSetTest {
 		memberHashSet.addMember(memberPark);
 		memberHashSet.showAllMember();
 		
-		Member memberHong = new Member(1003, "홍길동");
+		Member memberHong = new Member(1004, "홍길동");
 		memberHashSet.addMember(memberHong);
+		memberHashSet.removeMember(1001);
 		memberHashSet.showAllMember();
 		
 	}

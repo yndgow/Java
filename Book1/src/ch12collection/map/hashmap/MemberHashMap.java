@@ -1,4 +1,4 @@
-package ch12collection.map;
+package ch12collection.map.hashmap;
 
 import java.util.HashMap;
 import java.util.Iterator;

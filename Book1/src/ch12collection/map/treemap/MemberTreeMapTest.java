@@ -1,22 +1,22 @@
-package ch12collection.map.hashmap;
+package ch12collection.map.treemap;
 
 import ch12collection.Member;
 
-public class MemberHashMapTest {
+public class MemberTreeMapTest {
 	
 	public static void main(String[] args) {
 		
-		MemberHashMap memberHashMap = new MemberHashMap();
+		MemberTreeMap memberHashMap = new MemberTreeMap();
 		
-		Member memberLee = new Member(1001, "이지원");
-		Member memberSon = new Member(1002, "손민국");
 		Member memberPark = new Member(1003, "박서훤");
+		Member memberLee = new Member(1001, "이지원");
 		Member memberHong = new Member(1004, "홍길동");
+		Member memberSon = new Member(1002, "손민국");
 		
-		memberHashMap.addMember(memberLee);
-		memberHashMap.addMember(memberSon);
 		memberHashMap.addMember(memberPark);
+		memberHashMap.addMember(memberLee);
 		memberHashMap.addMember(memberHong);
+		memberHashMap.addMember(memberSon);
 		
 		memberHashMap.showAllMember();
 		
