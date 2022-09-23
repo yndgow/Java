@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * 날짜 : 2022/09/22
+ * 날짜 : 2022/09/22~23
  * 이름 : 김지홍
  * 내용 : 그룹단어 체커 1316
  */
