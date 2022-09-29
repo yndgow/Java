@@ -1,4 +1,4 @@
-package ch15.stream.inputsream;
+package ch15.stream.inputstream;
 
 import java.io.IOException;
 
